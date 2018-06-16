@@ -1,0 +1,24 @@
+<div class="container registerscreen">
+    <div class="card card-container">
+        <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+        <h3 style="text-align: center;">Create Account</h3>
+        <p id="profile-name" class="profile-name-card"></p>
+        <form class="form-signin">
+            <span id="reauth-email" class="reauth-email"></span>
+            <input type="text" class="form-control" placeholder="Full name" autofocus>
+            <input type="text" class="form-control" placeholder="User name">
+            
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <input type="password" id="inputCPassword" class="form-control" placeholder="Confirm Password" required>
+
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+            <input type="text" id="inputMobile" class="form-control" placeholder="Mobile Number" required>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Register</button>
+        </form><!-- /form -->
+        <div> Already have a account?
+            <a [routerLink]="['/account/login']">
+                 Login
+            </a></div>
+       
+    </div><!-- /card-container -->
+</div><!-- /container -->
